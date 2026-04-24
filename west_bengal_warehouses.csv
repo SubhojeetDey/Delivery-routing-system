@@ -1,0 +1,201 @@
+Warehouse_ID,Nearest_Hub,Latitude,Longitude,capacity
+WH_001,Kolkata/Howrah (Port & Rail),22.670151,88.454908,1128
+WH_002,Kolkata/Howrah (Port & Rail),22.660731,88.523259,555
+WH_003,Kolkata/Howrah (Port & Rail),22.682112,88.392724,1582
+WH_004,Kolkata/Howrah (Port & Rail),22.574477,88.266876,1981
+WH_005,Kolkata/Howrah (Port & Rail),22.675505,88.279327,1827
+WH_006,Kolkata/Howrah (Port & Rail),22.582847,88.332115,911
+WH_007,Kolkata/Howrah (Port & Rail),22.781549,88.299439,1855
+WH_008,Kolkata/Howrah (Port & Rail),22.793792,88.310157,1344
+WH_009,Kolkata/Howrah (Port & Rail),22.57509,88.407585,792
+WH_010,Kolkata/Howrah (Port & Rail),22.56067,88.270025,955
+WH_011,Kolkata/Howrah (Port & Rail),22.581457,88.402875,1578
+WH_012,Kolkata/Howrah (Port & Rail),22.421273,88.526844,1908
+WH_013,Kolkata/Howrah (Port & Rail),22.505141,88.611827,894
+WH_014,Kolkata/Howrah (Port & Rail),22.818787,88.252532,1382
+WH_015,Kolkata/Howrah (Port & Rail),22.637967,88.377319,1589
+WH_016,Kolkata/Howrah (Port & Rail),22.665407,88.489799,619
+WH_017,Kolkata/Howrah (Port & Rail),22.544664,88.51235,1198
+WH_018,Kolkata/Howrah (Port & Rail),22.532978,88.434392,1688
+WH_019,Kolkata/Howrah (Port & Rail),22.557714,88.382247,620
+WH_020,Kolkata/Howrah (Port & Rail),22.562607,88.539998,1021
+WH_021,Kolkata/Howrah (Port & Rail),22.529412,88.261513,1531
+WH_022,Kolkata/Howrah (Port & Rail),22.30244,88.332915,574
+WH_023,Kolkata/Howrah (Port & Rail),22.671331,88.393032,897
+WH_024,Kolkata/Howrah (Port & Rail),22.605641,88.292108,583
+WH_025,Kolkata/Howrah (Port & Rail),22.678884,88.270263,776
+WH_026,Kolkata/Howrah (Port & Rail),22.512926,88.426063,739
+WH_027,Kolkata/Howrah (Port & Rail),22.539603,88.463297,1302
+WH_028,Kolkata/Howrah (Port & Rail),22.55893,88.254844,658
+WH_029,Kolkata/Howrah (Port & Rail),22.469836,88.280585,1752
+WH_030,Kolkata/Howrah (Port & Rail),22.620826,88.382041,862
+WH_031,Kolkata/Howrah (Port & Rail),22.675737,88.35999,1900
+WH_032,Kolkata/Howrah (Port & Rail),22.370138,88.48222,1335
+WH_033,Kolkata/Howrah (Port & Rail),22.459926,88.290034,1107
+WH_034,Kolkata/Howrah (Port & Rail),22.452643,88.389433,1719
+WH_035,Kolkata/Howrah (Port & Rail),22.427511,88.290056,1404
+WH_036,Kolkata/Howrah (Port & Rail),22.649573,88.474168,597
+WH_037,Kolkata/Howrah (Port & Rail),22.47892,88.545343,1041
+WH_038,Kolkata/Howrah (Port & Rail),22.562912,88.317928,901
+WH_039,Kolkata/Howrah (Port & Rail),22.577969,88.52258,1889
+WH_040,Kolkata/Howrah (Port & Rail),22.569675,88.702988,1325
+WH_041,Durgapur/Asansol (Industrial),23.550684,87.435973,657
+WH_042,Durgapur/Asansol (Industrial),23.396165,87.348753,555
+WH_043,Durgapur/Asansol (Industrial),23.307983,87.058925,931
+WH_044,Durgapur/Asansol (Industrial),23.521465,87.335253,1452
+WH_045,Durgapur/Asansol (Industrial),23.353252,87.522128,1676
+WH_046,Durgapur/Asansol (Industrial),23.345955,87.552685,630
+WH_047,Durgapur/Asansol (Industrial),23.517615,87.319403,1124
+WH_048,Durgapur/Asansol (Industrial),23.541679,87.323186,1622
+WH_049,Durgapur/Asansol (Industrial),23.625782,87.339317,523
+WH_050,Durgapur/Asansol (Industrial),23.653982,87.363915,918
+WH_051,Durgapur/Asansol (Industrial),23.594255,87.212447,740
+WH_052,Durgapur/Asansol (Industrial),23.530395,87.352067,529
+WH_053,Durgapur/Asansol (Industrial),23.491192,87.463518,1639
+WH_054,Durgapur/Asansol (Industrial),23.427936,87.42387,1606
+WH_055,Durgapur/Asansol (Industrial),23.414882,87.420246,665
+WH_056,Durgapur/Asansol (Industrial),23.488314,87.158395,1278
+WH_057,Durgapur/Asansol (Industrial),23.447712,87.335904,958
+WH_058,Durgapur/Asansol (Industrial),23.814568,87.105765,1199
+WH_059,Durgapur/Asansol (Industrial),23.722258,87.431164,1498
+WH_060,Durgapur/Asansol (Industrial),23.312176,87.428289,785
+WH_061,Durgapur/Asansol (Industrial),23.457054,87.388475,1666
+WH_062,Durgapur/Asansol (Industrial),23.566561,87.305272,1069
+WH_063,Durgapur/Asansol (Industrial),23.508561,87.546163,814
+WH_064,Durgapur/Asansol (Industrial),23.307664,87.333604,868
+WH_065,Durgapur/Asansol (Industrial),23.491139,87.342532,530
+WH_066,Durgapur/Asansol (Industrial),23.731032,87.335768,826
+WH_067,Durgapur/Asansol (Industrial),23.500283,87.384708,714
+WH_068,Durgapur/Asansol (Industrial),23.41279,87.339056,843
+WH_069,Durgapur/Asansol (Industrial),23.648684,87.367743,973
+WH_070,Durgapur/Asansol (Industrial),23.420975,87.142368,1176
+WH_071,Durgapur/Asansol (Industrial),23.527587,87.354294,1690
+WH_072,Durgapur/Asansol (Industrial),23.551916,87.390309,1176
+WH_073,Durgapur/Asansol (Industrial),23.56148,87.327301,1515
+WH_074,Durgapur/Asansol (Industrial),23.454235,87.234697,1828
+WH_075,Durgapur/Asansol (Industrial),23.515191,87.42605,965
+WH_076,Durgapur/Asansol (Industrial),23.41496,87.385758,695
+WH_077,Durgapur/Asansol (Industrial),23.500122,87.185862,1900
+WH_078,Durgapur/Asansol (Industrial),23.387643,87.394493,1498
+WH_079,Durgapur/Asansol (Industrial),23.485533,87.094694,509
+WH_080,Durgapur/Asansol (Industrial),23.521317,87.297935,1052
+WH_081,Siliguri (North Bengal Gateway),26.969602,88.52577,760
+WH_082,Siliguri (North Bengal Gateway),26.476756,88.328742,1217
+WH_083,Siliguri (North Bengal Gateway),26.627959,88.17079,660
+WH_084,Siliguri (North Bengal Gateway),26.729164,88.578072,1147
+WH_085,Siliguri (North Bengal Gateway),26.415065,88.33214,635
+WH_086,Siliguri (North Bengal Gateway),26.786968,88.455461,538
+WH_087,Siliguri (North Bengal Gateway),26.816991,88.3376,1844
+WH_088,Siliguri (North Bengal Gateway),27.034435,88.427006,1531
+WH_089,Siliguri (North Bengal Gateway),26.643512,88.3439,1059
+WH_090,Siliguri (North Bengal Gateway),26.582017,88.22458,186
+WH_091,Siliguri (North Bengal Gateway),26.668507,88.394008,674
+WH_092,Siliguri (North Bengal Gateway),26.727728,88.431444,1242
+WH_093,Siliguri (North Bengal Gateway),26.799583,88.252169,1626
+WH_094,Siliguri (North Bengal Gateway),26.730321,88.41978,505
+WH_095,Siliguri (North Bengal Gateway),26.833197,88.316987,1618
+WH_096,Siliguri (North Bengal Gateway),26.711371,88.3702,1028
+WH_097,Siliguri (North Bengal Gateway),26.731282,88.323455,897
+WH_098,Siliguri (North Bengal Gateway),26.747299,88.341003,1472
+WH_099,Siliguri (North Bengal Gateway),26.750018,88.346271,1865
+WH_100,Siliguri (North Bengal Gateway),26.67086,88.531647,1111
+WH_101,Siliguri (North Bengal Gateway),26.659133,88.516578,1939
+WH_102,Siliguri (North Bengal Gateway),26.777152,88.403632,685
+WH_103,Siliguri (North Bengal Gateway),26.774104,88.380175,778
+WH_104,Siliguri (North Bengal Gateway),26.889738,88.510196,1626
+WH_105,Siliguri (North Bengal Gateway),26.669216,88.458468,1646
+WH_106,Siliguri (North Bengal Gateway),26.588204,88.257396,563
+WH_107,Siliguri (North Bengal Gateway),26.838069,88.536509,908
+WH_108,Siliguri (North Bengal Gateway),26.685513,88.445717,1199
+WH_109,Siliguri (North Bengal Gateway),26.55656,88.128534,599
+WH_110,Siliguri (North Bengal Gateway),26.717125,88.551663,934
+WH_111,Siliguri (North Bengal Gateway),26.676681,88.66925,1431
+WH_112,Siliguri (North Bengal Gateway),26.670298,88.561085,1270
+WH_113,Siliguri (North Bengal Gateway),26.829475,88.521152,1934
+WH_114,Siliguri (North Bengal Gateway),26.814669,88.622032,1399
+WH_115,Siliguri (North Bengal Gateway),26.665697,88.450408,1676
+WH_116,Siliguri (North Bengal Gateway),26.720278,88.459534,1666
+WH_117,Siliguri (North Bengal Gateway),26.969573,88.303051,1599
+WH_118,Siliguri (North Bengal Gateway),26.760769,88.449661,1574
+WH_119,Siliguri (North Bengal Gateway),26.615213,88.314985,964
+WH_120,Siliguri (North Bengal Gateway),26.704365,88.229847,1321
+WH_121,Haldia (Port),22.061535,88.134569,1535
+WH_122,Haldia (Port),22.155874,88.00246,1749
+WH_123,Haldia (Port),22.120529,88.059728,535
+WH_124,Haldia (Port),21.972184,88.023063,1469
+WH_125,Haldia (Port),21.993211,87.780026,780
+WH_126,Haldia (Port),22.136592,88.106734,606
+WH_127,Haldia (Port),22.199114,88.11397,1996
+WH_128,Haldia (Port),22.110316,87.905012,1036
+WH_129,Haldia (Port),22.00268,88.186904,578
+WH_130,Haldia (Port),22.23182,87.906848,1439
+WH_131,Haldia (Port),22.277309,87.968729,1596
+WH_132,Haldia (Port),22.016892,88.089451,1560
+WH_133,Haldia (Port),22.05612,88.18319,1708
+WH_134,Haldia (Port),22.122225,88.15576,1247
+WH_135,Haldia (Port),22.162236,88.219451,680
+WH_136,Haldia (Port),22.024261,88.034405,1155
+WH_137,Haldia (Port),21.891419,87.842168,1646
+WH_138,Haldia (Port),22.091153,88.126964,1645
+WH_139,Haldia (Port),22.056216,87.98225,1063
+WH_140,Haldia (Port),22.136373,88.045639,1993
+WH_141,Haldia (Port),22.206266,88.263261,1029
+WH_142,Haldia (Port),22.194238,88.129342,1396
+WH_143,Haldia (Port),22.054494,87.849243,1980
+WH_144,Haldia (Port),21.961775,88.222885,1338
+WH_145,Haldia (Port),22.10901,88.023954,1189
+WH_146,Haldia (Port),22.005446,87.963007,667
+WH_147,Haldia (Port),22.218878,87.982839,1009
+WH_148,Haldia (Port),21.972305,88.136557,1626
+WH_149,Haldia (Port),22.032406,88.107405,1345
+WH_150,Haldia (Port),22.013437,88.072162,1297
+WH_151,Haldia (Port),22.056406,88.171224,666
+WH_152,Haldia (Port),21.986601,88.06039,1848
+WH_153,Haldia (Port),22.046309,87.987175,672
+WH_154,Haldia (Port),22.280792,88.087554,1139
+WH_155,Haldia (Port),22.218632,88.097544,1310
+WH_156,Haldia (Port),22.209917,88.187,748
+WH_157,Haldia (Port),21.920285,88.021343,1748
+WH_158,Haldia (Port),21.895542,88.364345,1972
+WH_159,Haldia (Port),22.203176,87.92194,995
+WH_160,Haldia (Port),21.920473,88.338962,1593
+WH_161,Kharagpur (Rail/Highway Hub),22.434678,87.453689,1661
+WH_162,Kharagpur (Rail/Highway Hub),22.161865,87.463511,626
+WH_163,Kharagpur (Rail/Highway Hub),22.132904,87.187614,1764
+WH_164,Kharagpur (Rail/Highway Hub),22.421895,87.362897,959
+WH_165,Kharagpur (Rail/Highway Hub),22.625205,87.434623,1122
+WH_166,Kharagpur (Rail/Highway Hub),22.349724,87.334747,1886
+WH_167,Kharagpur (Rail/Highway Hub),22.277414,87.164702,1614
+WH_168,Kharagpur (Rail/Highway Hub),22.409137,87.230802,674
+WH_169,Kharagpur (Rail/Highway Hub),22.228165,87.331139,597
+WH_170,Kharagpur (Rail/Highway Hub),22.190946,87.306935,1760
+WH_171,Kharagpur (Rail/Highway Hub),22.214425,87.182898,730
+WH_172,Kharagpur (Rail/Highway Hub),22.268777,87.317513,1892
+WH_173,Kharagpur (Rail/Highway Hub),22.225417,87.247475,1448
+WH_174,Kharagpur (Rail/Highway Hub),22.365296,87.269567,857
+WH_175,Kharagpur (Rail/Highway Hub),22.233386,87.137404,761
+WH_176,Kharagpur (Rail/Highway Hub),22.262756,87.453142,1644
+WH_177,Kharagpur (Rail/Highway Hub),22.281355,87.306698,888
+WH_178,Kharagpur (Rail/Highway Hub),22.480457,87.422404,1559
+WH_179,Kharagpur (Rail/Highway Hub),22.367757,87.505522,597
+WH_180,Kharagpur (Rail/Highway Hub),22.056692,87.114845,710
+WH_181,Kharagpur (Rail/Highway Hub),22.251921,87.474549,1879
+WH_182,Kharagpur (Rail/Highway Hub),22.442603,87.26118,1749
+WH_183,Kharagpur (Rail/Highway Hub),22.38268,87.26666,1122
+WH_184,Kharagpur (Rail/Highway Hub),22.258585,87.299872,823
+WH_185,Kharagpur (Rail/Highway Hub),22.333712,87.5606,1384
+WH_186,Kharagpur (Rail/Highway Hub),22.077138,87.279681,790
+WH_187,Kharagpur (Rail/Highway Hub),22.165362,87.129365,1891
+WH_188,Kharagpur (Rail/Highway Hub),22.396457,87.289781,1022
+WH_189,Kharagpur (Rail/Highway Hub),22.471402,87.179135,1519
+WH_190,Kharagpur (Rail/Highway Hub),22.334012,87.401989,1978
+WH_191,Kharagpur (Rail/Highway Hub),22.315843,87.209659,1369
+WH_192,Kharagpur (Rail/Highway Hub),22.473235,87.331198,1929
+WH_193,Kharagpur (Rail/Highway Hub),22.196222,87.367337,1412
+WH_194,Kharagpur (Rail/Highway Hub),22.38893,87.535652,1977
+WH_195,Kharagpur (Rail/Highway Hub),22.3141,87.354639,1886
+WH_196,Kharagpur (Rail/Highway Hub),22.155841,87.328084,1544
+WH_197,Kharagpur (Rail/Highway Hub),22.382101,87.154916,1483
+WH_198,Kharagpur (Rail/Highway Hub),22.371774,87.538055,1418
+WH_199,Kharagpur (Rail/Highway Hub),22.198369,87.482916,930
+WH_200,Kharagpur (Rail/Highway Hub),22.445231,87.390522,1186
