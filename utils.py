@@ -201,8 +201,25 @@ def get_delivery_warehouses(hub,db:Session):
 
 # print(get_delivery_warehouses("Kolkata/Howrah (Port & Rail)",db_dependency))
 
+def get_nearest_airport(hub_lat, hub_lon):
+    df = pd.read_csv('india_logistics_airports.csv')
 
+    min_dist = float('inf')
+    nearest_airport = None
 
+    for i in range(len(df)):
+        airport_lat = df.iloc[i]['Lat']
+        airport_lon = df.iloc[i]['Long']
+
+        dist = haversine(hub_lat, hub_lon, airport_lat, airport_lon)
+
+        if dist < min_dist:
+            min_dist = dist
+            nearest_airport = df.iloc[i]
+
+    return {
+        "airport":nearest_airport.to_dict()
+    }
 
 
 

@@ -98,6 +98,7 @@ async def createConsignment(
     source: str = Form(...),
     destination: str = Form(...),
     destination_pincode: str = Form(...),
+    source_pincode: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
     username,user_id = auths.verify_token(token)
@@ -126,11 +127,20 @@ async def createConsignment(
     new_consignment.image=new_filename
     new_consignment.qr_code = image_utils.generate_qr(id)
     warehouse,hub = utils.get_nearest_warehouse(str(destination_pincode),utils.hubs)
+    source_lat,source_lon = utils.get_coordinates(source_pincode)
+    hub_lat = hub['lat']
+    hub_lon = hub['lon']
+    nearest_airport_to_hub = utils.get_nearest_airport(float(hub_lat),float(hub_lon))
+    nearest_airport = utils.get_nearest_airport(float(source_lat),float(source_lon))
+    
     new_path = models.DeliveryRoute(
+        delivery_stops=[],
         hub=hub['hub'],
         nearest_hubs=hub,
         nearest_warehouse=warehouse
     )
+    new_path.delivery_stops.append(nearest_airport)
+    new_path.delivery_stops.append(nearest_airport_to_hub)
     new_consignment.paths=new_path
     user.consignments.append(new_consignment)
     db.commit()
@@ -405,7 +415,7 @@ async def get_route(source:str,destination:str,db:db_dependency,token:str=Depend
     route  = utils.get_path_coordinates(source,destination)
     return route
 
-@app.get('/Deliveries')
+@app.get('/Deliveries',tags=['Route Optimization'])
 async def get_delivery(WorkLocation:str,db:db_dependency,token:str=Depends(oauth2_scheme)):
     username,user_id = auths.verify_token(token)
     user = auths.verify_user(user_id,db)

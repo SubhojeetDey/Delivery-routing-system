@@ -35,6 +35,7 @@ class GetConsignment(BaseModel):
     image:str
     destination_pincode:str
     qr_code:str
+    consignment_id:str
 
     class Config:
         from_attributes=True
@@ -46,6 +47,7 @@ class Consignment(BaseModel):
     destination_pincode:str
     image:str
     qr_code:str
+    consignment_id:str
 
     class Config:
         from_attributes=True
