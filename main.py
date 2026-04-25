@@ -13,7 +13,19 @@ from typing_extensions import Annotated,List,Optional
 from sqlalchemy.orm import Session
 from sqlalchemy import select,func
 
+
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
+
+# Allow all origins (⚠️ not recommended for production)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all domains
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 Base.metadata.create_all(engine)
 
