@@ -93,7 +93,7 @@ def get_nearest_warehouse(pincode,hub):
             id = i
     warehouse = {"warehouse_id":id[0],"co-ordinates":f"{id[1]},{id[2]}"}
     hub = {"hub":Nearest_Hub,"lat":center_lat,"lon":center_lon}
-    return warehouse,hub
+    return warehouse,hub,min_distance
 
 def get_weekday():
     day = datetime.now().strftime("%A")
@@ -218,7 +218,8 @@ def get_nearest_airport(hub_lat, hub_lon):
             nearest_airport = df.iloc[i]
 
     return {
-        "airport":nearest_airport.to_dict()
+        "airport":nearest_airport.to_dict(),
+        "min_dist":min_dist
     }
 
 

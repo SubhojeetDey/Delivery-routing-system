@@ -1,4 +1,5 @@
 from fastapi import FastAPI,Depends,HTTPException,Request,UploadFile,File,Form
+from fastapi.staticfiles import StaticFiles
 from fastapi.security import OAuth2PasswordBearer,OAuth2PasswordRequestForm
 import settings,getapis,utils,json
 from datetime import datetime,timedelta
@@ -19,6 +20,8 @@ Base.metadata.create_all(engine)
 db_dependency = Annotated[Session,Depends(get_db)]
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='/user/Login/')
+
+app.mount("/media", StaticFiles(directory="media"), name="media")
 
 @app.post('/user/Signup/',tags=['Auth'],status_code=200)
 async def createUser(req:schemas.User,user_agent:Request,db:db_dependency):
@@ -90,7 +93,23 @@ async def logout_user(token:str,user_agent:Request,db:db_dependency):
         return {"detail":"Signed out"}
     raise HTTPException(status_code=400,detail="Invalid request.")
 
-@app.post('/consignment/create',tags=['Consignments'])
+@app.get('/user/details',tags=['User'],response_model=schemas.User)
+async def getProfile(db:db_dependency,token:str=Depends(oauth2_scheme)):
+    username,user_id = auths.verify_token(token)
+    user = db.query(models.User).filter(models.User.user_id == user_id).first()
+    if user is None:
+        raise HTTPException(status_code=401,detail="User not found.")
+    return user
+
+@app.get('/user/Profile',tags=['User'])
+async def getProfile(db:db_dependency,token:str=Depends(oauth2_scheme)):
+    username,user_id = auths.verify_token(token)
+    user = db.query(models.User).filter(models.User.user_id == user_id).first()
+    if user is None:
+        raise HTTPException(status_code=401,detail="User not found.")
+    return user.profile
+
+@app.post('/consignment/create',tags=['Consignments'],response_model=schemas.Consignment)
 async def createConsignment(
     db: db_dependency,
     image: UploadFile = File(...),
@@ -126,12 +145,13 @@ async def createConsignment(
         )from err
     new_consignment.image=new_filename
     new_consignment.qr_code = image_utils.generate_qr(id)
-    warehouse,hub = utils.get_nearest_warehouse(str(destination_pincode),utils.hubs)
+    warehouse,hub,min_distance = utils.get_nearest_warehouse(str(destination_pincode),utils.hubs)
     source_lat,source_lon = utils.get_coordinates(source_pincode)
     hub_lat = hub['lat']
     hub_lon = hub['lon']
     nearest_airport_to_hub = utils.get_nearest_airport(float(hub_lat),float(hub_lon))
     nearest_airport = utils.get_nearest_airport(float(source_lat),float(source_lon))
+    min_dist = nearest_airport_to_hub['min_dist']
     
     new_path = models.DeliveryRoute(
         delivery_stops=[],
@@ -139,16 +159,15 @@ async def createConsignment(
         nearest_hubs=hub,
         nearest_warehouse=warehouse
     )
-    new_path.delivery_stops.append(nearest_airport)
-    new_path.delivery_stops.append(nearest_airport_to_hub)
+    if min_distance > min_dist:
+        new_path.delivery_stops.append(nearest_airport)
+        new_path.delivery_stops.append(nearest_airport_to_hub)
     new_consignment.paths=new_path
     user.consignments.append(new_consignment)
     db.commit()
     db.refresh(user)
 
-    return {
-        "detail":"Consignment Created."
-    }
+    return new_consignment
 
 @app.get('/consignment/getALL',tags=['Consignments'],response_model=List[schemas.GetConsignment])
 async def getAllConsignment(db:db_dependency,limit: int = 10, skip: int = 0,token:str=Depends(oauth2_scheme)):
@@ -406,7 +425,7 @@ async def get_matrix(req:schemas.Routing,db:db_dependency,token:str=Depends(oaut
     except:
         raise HTTPException(status_code=400,detail="Invalid request.")
 
-@app.get('/Paths/GetPaths',tags=['Route Optimization'])
+@app.get('/Paths/RouteCoordinates',tags=['Route Optimization'])
 async def get_route(source:str,destination:str,db:db_dependency,token:str=Depends(oauth2_scheme)):
     username,user_id = auths.verify_token(token)
     user = auths.verify_user(user_id,db)

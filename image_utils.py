@@ -17,11 +17,11 @@ QR_DIR.mkdir(parents=True, exist_ok=True)
 
 def generate_qr(consignment_id: str):
     qr = qrcode.make(consignment_id)
-    filename = f"{consignment_id}{str(uuid.uuid4())}.png"
+    filename = f"{str(uuid.uuid4())}.png"
     file_path = QR_DIR / filename
     qr.save(file_path)
 
-    return str(str(DIR/filename))
+    return str(filename)
 
 PROFILE_PIC_DIR = Path(os.path.join(os.getcwd(),"media/img/consignments"))
 PROFILE_PIC_DIR.mkdir(parents=True,exist_ok=True)

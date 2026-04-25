@@ -72,6 +72,7 @@ class Profile(BaseModel):
 class path(BaseModel):
     nearest_hubs:Dict[str, Any]
     nearest_warehouse:Dict[str, Any]
+    delivery_stops:list
 
     class Config:
         from_attributes=True
